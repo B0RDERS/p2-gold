@@ -11,8 +11,8 @@
     <p>I built this project alone over a 2 week period, learning a lot about game design and 3d graphics in the process.</p>
     <p>The trickiest part of this project has been the camera movement. It's surprisingly hard to smoothly orient the camera with gravity.</p>
     <p>To download current and previous, builds, go <a href="downloads">here</a></p>
-    <canvas id="unity-canvas" width=320 height=300 tabindex="-1" style="width: 320px; height: 300px; background: #231F20"></canvas>
-    <script src="Build/web-build.loader.js"></script>
+    <canvas id="unity-canvas" width=960 height=600 tabindex="-1" style="width: 960px; height: 600px; background: #231F20"></canvas>
+    <script src="Build/web.loader.js"></script>
     <script>
       if (/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)) {
         // Mobile device style: fill the whole browser client area with the game canvas:
@@ -30,14 +30,14 @@
       }
 
       createUnityInstance(document.querySelector("#unity-canvas"), {
-        dataUrl: "Build/web-build.data.unityweb",
-        frameworkUrl: "Build/web-build.framework.js.unityweb",
-        codeUrl: "Build/web-build.wasm.unityweb",
+        dataUrl: "Build/web.data",
+        frameworkUrl: "Build/web.framework.js",
+        codeUrl: "Build/web.wasm",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "DefaultCompany",
-        productName: "p1",
-        productVersion: "1.0",
-        matchWebGLToCanvasSize: false, // Uncomment this to separately control WebGL canvas render size and DOM element size.
+        productName: "p2",
+        productVersion: "0.1.0",
+        // matchWebGLToCanvasSize: false, // Uncomment this to separately control WebGL canvas render size and DOM element size.
         // devicePixelRatio: 1, // Uncomment this to override low DPI rendering on high DPI displays.
       });
     </script>
